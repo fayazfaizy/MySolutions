@@ -1,3 +1,15 @@
+/*
+You are given two linked-lists where each node represents an integer digit.
+You need to create a new list which contains the sum of the two numbers represented in the first two lists. 
+For example:-
+Input:-
+List 1: 1 ->2->3->4->null 
+List 2: 9->8->7->6->null 
+Output:-
+Result: 10 ->10 ->10 ->10 ->null
+*/
+
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
