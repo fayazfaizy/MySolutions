@@ -23,7 +23,7 @@ struct node
     struct node * prev;
 };
 
-struct node * insert(int n)
+struct node * insert(int n)         // Create a new linked list
 {
     int i;
     struct node *head = NULL, *last;
@@ -49,7 +49,7 @@ struct node * insert(int n)
     return head;
 }
 
-void print( struct node * head )
+void print( struct node * head )            // print a linked list
 {
     while( head != NULL )
     {
@@ -57,6 +57,7 @@ void print( struct node * head )
         head = head -> next;
     }
 }
+
 int main(){
 
     struct node *head , *t;
@@ -65,18 +66,18 @@ int main(){
     scanf("%d", &n);
     printf("Enter the elements for link list \n");
 
-    head = insert(n);
+    head = insert(n);                               // create new linked list
 
     struct node *h1, *h2, *l1, *l2 ,*m;
     int i;
 
-    if ( head -> next == NULL )
+    if ( head -> next == NULL )                    // If only one element print the element
     {
         print( head );
         return 0;
     }
 
-    for ( i = 0, t = head ; i < n ; i++, t = t->next )
+    for ( i = 0, t = head ; i < n ; i++, t = t->next )          // Find head1, Head2, Last1, Last 2
     {
         if( i == 0 )
         {
@@ -109,7 +110,7 @@ int main(){
 
     struct node *newHead;
 
-    newHead = h2;
+    newHead = h2;                                       // Rearrange the linked list
     newHead -> prev = NULL;
     l2 -> next = h1;
     h1 -> prev = l2;
