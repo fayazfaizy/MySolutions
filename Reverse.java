@@ -1,3 +1,15 @@
+/*
+Reverse words in a line 
+Given a string reverse the words in that line. 
+For example: 
+
+Input: "Hello world" 
+Output: "world Hello" 
+
+Input: "A B C" 
+Output: "C B A"
+*/
+
 import java.util.*;
 class Reverse{
     public static void main(String args[]){
