@@ -99,8 +99,6 @@ int main()
         buildTree( &root, num);
     }
 
-    print( root);
-    printf("\n");
     int key;
     printf("Enter the element for search : ");
     scanf("%d", &key);
