@@ -93,7 +93,7 @@ int main()
 
     int i, num;
 
-    for( i = 0; i < n ; i++ )
+    for( i = 0; i < n ; i++ )                                 //  Insert element one by one
     {
         scanf("%d", &num);
         buildTree( &root, num);
@@ -103,6 +103,6 @@ int main()
     printf("Enter the element for search : ");
     scanf("%d", &key);
 
-    printf("%s", find( root, key));
+    printf("%s", find( root, key));                          // Find the key element
     return 0;
 }
