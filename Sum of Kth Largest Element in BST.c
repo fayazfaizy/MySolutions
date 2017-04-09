@@ -1,20 +1,19 @@
 /*
 
-Check element in BST Given a binary search tree with positive integers,
- check if given element is present in the given tree.
+Sum of Kth Largest Element in BST Given a binary search tree with positive integers,
+Find the sum of k largest elements of the BST. (given k <= number of elements in BST). 
+For example: 
+Input:
+          5
+        /    \
+       3      7
+      / \    / \
+     2   4  6   8
+     
+For k = 3 
+Output = 21
 
-For example:
-Input:              14
-                  /     \
-                 3       17
-                / \     /  \
-               2   4   6    18
-
-Input : 17
-Output: True
-
-Input : 9
-Output: False
+Ex- [ 6 + 7 + 8 = 21 ]
 
 */
 
